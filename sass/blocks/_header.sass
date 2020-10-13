@@ -1,0 +1,52 @@
+.navbar
+  display: flex
+  // border: 1px solid red
+  margin-bottom: 42px
+  &-wrapper
+    // border: 1px solid green
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 1140px
+    height: 100px
+  &-logo
+    &__image
+      width: 90px
+      height: 28px
+      object-fit: cover
+  &-menu
+    border: 1px solid black
+    list-style-type: none
+    margin: 0
+    padding: 0
+    min-width: 506px
+    height: 22px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    cursor: pointer
+    &__item
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $dark-blue
+  &-button
+    display: flex
+    align-items: center
+    text-align: center
+    min-width: 101px
+    padding: 13px 24px
+    border: none
+    border-radius: 8px
+    border: 2px solid $blue
+    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    cursor: pointer
+    &__text
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      color: $blue
+.container
+  // border: 1px solid grey
