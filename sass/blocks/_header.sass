@@ -1,7 +1,7 @@
 .navbar
   display: flex
   // border: 1px solid red
-  margin-bottom: 42px
+  margin-bottom: 36px
   &-wrapper
     // border: 1px solid green
     display: flex
@@ -50,3 +50,34 @@
       color: $blue
 .container
   // border: 1px solid grey
+
+@media ( max-width: 1200px )
+  .container
+    width: 90%
+@media ( max-width: 992px )
+  .container
+    width: 90%
+
+@media ( max-width: 768px )
+  .container
+    width: 672px
+  .navbar
+    margin-bottom: 30px
+    margin-top: 8px
+    &-wrapper
+      width: 640px
+      height: 64px
+
+  &-logo
+    &__image
+
+  &-menu
+
+    &__item
+
+  &-button
+
+    &__text
+
+.container
+  // width: 768px
