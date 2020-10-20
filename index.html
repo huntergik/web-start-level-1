@@ -4,108 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Ehya</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="navbar">
+  <header class="header">
     <div class="container">
-      <div class="navbar-wrapper">
-        <a href="index.html" class="navbar-logo">
-          <img src="img/header/Logo.png" alt="logo" class="navbar-logo__image">
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+          <img src="img/header/Logo.png" alt="logo" class="header__logo_image">
         </a>
-        <ul class="navbar-menu">
-          <li class="navbar-menu__item">Главная</li>
-          <li class="navbar-menu__item">Новинки</li>
-          <li class="navbar-menu__item">Тренды</li>
-          <li class="navbar-menu__item">Отзывы</li>
-          <li class="navbar-menu__item">Контакты</li>
-        </ul>
-        <button class="navbar-button">
-          <span class="navbar-button__text">Войти</span>
-        </button>
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li><a class="header__link" href="#">Главная</a></li>
+            <li><a class="header__link" href="#">Новинки</a></li>
+            <li><a class="header__link" href="#">Тренды</a></li>
+            <li><a class="header__link" href="#">Отзывы</a></li>
+            <li><a class="header__link" href="#">Контакты</a></li>
+          </ul>
+          <button class="header__button">
+            <span class="header__button_text">Войти</span>
+          </button>
+        </nav>
       </div>
     </div>
     <!-- /.container -->
   </header>
   <!-- /.header -->
 
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-wrapper">
-        <div class="hero-wrapper__content">
-          <div class="hero-wrapper__content_frame">
-            <button class="hero-wrapper__content_frame_label">
-              <span class="hero-wrapper__content_frame_label_text"># READY TO BE COOL</span>
-            </button>
-            <h1 class="hero-wrapper__content_frame_title">Каждый может быть крутым и модным</h1>
-            <p class="hero-wrapper__content_frame_text">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять
-              свой стиль. Всё это вы можете найти
-              здесь. Начните сейчас.</p>
-          </div>
-          <!-- /.hero-wrapper__content_frame -->
-          <button class="hero-wrapper__content_button">
-            <span class="hero-wrapper__content_button_text">Подобрать одежду</span>
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-wrapper">
+      <div class="hero-wrapper__content">
+        <div class="hero-wrapper__content_frame">
+          <button class="hero-wrapper__content_frame_label">
+            <span class="hero-wrapper__content_frame_label_text"># READY TO BE COOL</span>
           </button>
-          <div class="hero-box">
-            <ul class="hero-box__item">
-              <li class="hero-box__item_link">
-                <img src="img/hero/icon_get_money.svg" alt="icon get money" class="hero-box__item_icon">
-                <span class="hero-box__item_link_text">Онлайн оплата</span>
-              </li>
-              <li class="hero-box__item_link">
-                <img src="img/hero/icon_protection.svg" alt="icon protection" class="hero-box__item_icon">
-                <span class="hero-box__item_link_text">Гарантия</span>
-              </li>
-              <li class="hero-box__item_link">
-                <img src="img/hero/icon_like.svg" alt="icon like" class="hero-box__item_icon">
-                <span class="hero-box__item_link_text">Качество</span>
-              </li>
-            </ul>
-          </div>
+          <h1 class="hero-wrapper__content_frame_title">Каждый может быть крутым и модным</h1>
+          <p class="hero-wrapper__content_frame_text">Чтобы быть в тренде и стать модным, вам нужно носить отличную
+            одежду и обновлять
+            свой стиль. Всё это вы можете найти
+            здесь. Начните сейчас.</p>
         </div>
-        <div class="hero-wrapper__frame">
-          <!-- <img src="" alt="gradient" class="hero-wrapper__frame_gradient"> -->
-          <img src="img/hero/Image2.png" alt="photo" class="hero-wrapper__frame_photo">
-          <!-- <img src="img/hero/background.png" alt="background" class="hero-wrapper__frame_background"> -->
+        <!-- /.hero-wrapper__content_frame -->
+        <button class="hero-wrapper__content_button">
+          <span class="hero-wrapper__content_button_text">Подобрать одежду</span>
+        </button>
+        <div class="hero-box">
+          <ul class="hero-box__item">
+            <li class="hero-box__item_link">
+              <img src="img/hero/icon_get_money.svg" alt="icon get money" class="hero-box__item_icon">
+              <span class="hero-box__item_link_text">Онлайн оплата</span>
+            </li>
+            <li class="hero-box__item_link">
+              <img src="img/hero/icon_protection.svg" alt="icon protection" class="hero-box__item_icon">
+              <span class="hero-box__item_link_text">Гарантия</span>
+            </li>
+            <li class="hero-box__item_link">
+              <img src="img/hero/icon_like.svg" alt="icon like" class="hero-box__item_icon">
+              <span class="hero-box__item_link_text">Качество</span>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="hero-wrapper__frame">
+        <!-- <img src="" alt="gradient" class="hero-wrapper__frame_gradient"> -->
+        <img src="img/hero/Image2.png" alt="photo" class="hero-wrapper__frame_photo">
+        <!-- <img src="img/hero/background.png" alt="background" class="hero-wrapper__frame_background"> -->
+      </div>
     </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.hero -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.hero -->
 
-  <section class="collection">
-    <div class="container">
-      <div class="collection-wrapper">
-        <div class="collection-wrapper__wrapper">
-          <div class="collection-wrapper__wrapper_frame">
-            <img src="img/collection/base-1.png" alt="#" class="collection-wrapper__frame_photo photo-1">
-          </div>
-          <!-- /.collection-wrapper__frame -->
-          <div class="collection-wrapper__wrapper_frames">
-            <img src="img/collection/base-2.png" alt="#" class="collection-wrapper__frames_photo photo-2">
-            <img src="img/collection/base-3.png" alt="#" class="collection-wrapper__frames_photo photo-3">
-          </div>
-          <!-- /.collection-wrapper__frame -->
+<section class="collection">
+  <div class="container">
+    <div class="collection-wrapper">
+      <div class="collection-wrapper__wrapper">
+        <div class="collection-wrapper__wrapper_frame">
+          <img src="img/collection/base-1.png" alt="#" class="collection-wrapper__frame_photo photo-1">
         </div>
-        <div class="collection-content">
-          <h2 class="collection-content__title">Новая зимняя коллекция</h2>
-          <p class="collection-content__text">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть
+        <!-- /.collection-wrapper__frame -->
+        <div class="collection-wrapper__wrapper_frames">
+          <img src="img/collection/base-2.png" alt="#" class="collection-wrapper__frames_photo photo-2">
+          <img src="img/collection/base-3.png" alt="#" class="collection-wrapper__frames_photo photo-3">
+        </div>
+        <!-- /.collection-wrapper__frame -->
+      </div>
+      <div class="collection-content">
+        <h2 class="collection-content__title">Новая зимняя коллекция</h2>
+        <p class="collection-content__text">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав
+          кнопку ниже. Успейте купить, пока коллекция есть
           в наличии. Используйте код EHYA20, чтобы получить 20% скидку.</p>
-          <a href="#" class="collection-content__link">
-            <span class="collection-content__link_text">Посмотреть коллекцию</span>
-            <img src="img/collection/arrow right.svg" alt="Стрелка вправо" class="collection-content__link_icon">
-          </a>
-        </div>
-        <!-- /.collection-content -->
+        <a href="#" class="collection-content__link">
+          <span class="collection-content__link_text">Посмотреть коллекцию</span>
+          <img src="img/collection/arrow right.svg" alt="Стрелка вправо" class="collection-content__link_icon">
+        </a>
       </div>
+      <!-- /.collection-content -->
     </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.collection -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.collection -->
 
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
