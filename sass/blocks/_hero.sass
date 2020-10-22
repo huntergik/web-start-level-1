@@ -1,247 +1,126 @@
 .hero
-  display: flex
-  align-items: center
-  justify-content: center
   margin-top: 136px
   margin-bottom: 120px
+  display: flex
+  justify-content: center
   border: 1px solid green
-  &-container
-    width: 1280px
-    height: 700px
-  &-wrapper
-    // background-image: url(../img/hero/Image2.png)
+  &__container
+    border: 1px solid red
 
-    width: 100%
-    height: 100%
+  &__wrapper
+    position: relative
+
+  &__package
+    position: absolute
+    top: 0
+    left: 0
     display: flex
-    align-items: flex-start
+    flex-direction: column
+    align-items: start
     justify-content: space-between
+    border: 1px solid blue
+    height: 100%
+    padding: 62px 0 46px 107px
 
-    &__image
-      // width: 100%
-      // height: 700px
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: start
+    justify-content: space-between
+    width: 652px
+    height: 400px
+    border: 1px solid yellow
 
-    &__content
-      border: 1px solid green
-      width: 652px
-      // height: 400px
-      position: absolute
-      display: flex
-      flex-direction: column
-      align-items: start
-      justify-content: space-between
-      // z-index: 99
-      margin: 62px 0 36px 107px
-      z-index: 99
+    &_label
+      padding: 6px 16px
+      width: 175px
+      height: 32px
+      background: rgba(54, 179, 126, 0.1)
+      border-radius: 2000px
+      border: none
+      text-decoration: none
 
-      &_frame
-        border: 1px solid blue
-        display: flex
-        flex-direction: column
-        align-items: start
-        justify-content: space-between
-        height: 400px
+      &_text
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+        color: #36B37E
 
-        &_label
-          width: 175px
-          height: 32px
-          background: rgba(54, 179, 126, 0.1)
-          border-radius: 2000px
-          border: none
-          cursor: pointer
+    &_title
+      font-family: HKGrotesk
+      font-style: normal
+      font-weight: 700
+      font-size: 56px
+      line-height: 68px
+      color: #183B56
 
-          &_text
-            font-family: Open Sans
-            font-style: normal
-            font-weight: 600
-            font-size: 14px
-            line-height: 20px
-            text-align: center
-            color: #36B37E
+    &_text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: #5A7184
 
-        &_title
-          margin: 0
-          font-family: HKGrotesk-Bold
-          font-style: normal
-          font-weight: normal
-          font-size: 56px
-          line-height: 68px
-          color: #183B56
+  &__button
+    padding: 15px 40px
+    width: 259px
+    background: #183B56
+    border-radius: 8px
+    text-decoration: none
 
-        &_text
-          margin: 0
-          font-family: Open Sans
-          font-style: normal
-          font-weight: normal
-          font-size: 20px
-          line-height: 36px
-          color: #5A7184
+    &_text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: #FFFFFF
 
-      &_button
-        margin-top: 52.5px
-        padding: 15px 40px
-        width: 259px
-        left: 107.5px
-        top: 73.5%
-        bottom: 18.64%
-        background: #183B56
-        border-radius: 8px
-        border: none
-        cursor: pointer
+  &__frame
+    width: 100%
+    height: 700px
+    overflow: hidden
 
-        &_text
-          font-family: Open Sans
-          font-style: normal
-          font-weight: bold
-          font-size: 18px
-          line-height: 25px
-          text-align: center
-          color: #FFFFFF
-    &__frame
-      position: relative
-      width: 100%
-      height: 700px
-      overflow: hidden
+    &_photo
+      min-width: 100%
+      height: auto
+      object-fit: cover
 
-      &_gradient
-      &_photo
-        // background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
-        // object-fit: cover
-        // width: 700px
-        height: auto
-        // position: absolute
-        // left: 27.97%
-        // right: -11.88%
-        // top: -53.86%
-        // bottom: -76.71%
-        // z-index: 1
-        // visibility: hidden
-      &_background
-        // opacity: none
-        // position: absolute
-        // border-radius: 8px
-        // background: #E8EAE9
-
-  &-box
+  &-frame
     width: 464px
     height: 36px
-    padding: 0px
-    margin-top: 48.5px
-    // position: absolute
+
     &__item
-      list-style-type: none
       display: flex
-      align-items: end
+      align-items: center
       justify-content: space-between
+      list-style-type: none
 
       &_link
         display: flex
         align-items: center
-        justify-content: center
+
+        &_icon
+          display: block
+          min-width: 21px
+          min-height: 21px
+          border: 0.75px solid #1565D8
+          border-radius: 12px
+          padding: 7.5px
+          margin-right: 8px
 
         &_text
-          font-family: HKGrotesk-Medium
+          font-family: HKGrotesk
           font-style: normal
           font-weight: 500
           font-size: 16px
           line-height: 20px
           color: #183B56
 
-      &_icon
-        width: 36px
-        height: 36px
-        margin-right: 8px
-        border-radius: 12px
-        border: 0.75px solid #1565D8
-        padding: 7.5px 7.5px
-
-@media ( max-width: 1200px )
+@media ( max-width: 1280px )
   .hero
-    margin-bottom: 80px
-    &-container
-      // width: 1160px
-      // width: 96%
-      // height: 624px
-
-    &-wrapper
-
-      &__frame
-        width: 100%
-        height: 624px
-        &_photo
-          width: 100%
-          height: 624px
-          object-fit: cover
-
-      &__content
-        width: 407px
-        height: 384px
-        margin: 36px 0 204px 28px
-        &_frame
-          width: 407px
-          height: 384px
-
-@media ( max-width: 992px )
-  .hero
-    margin-bottom: 80px
-    &-container
-      // width: 952px
-      // height: 624px
-
-    &-wrapper
-
-      &__frame
-        width: 100%
-        height: 624px
-        &_photo
-          width: 100%
-          height: 624px
-          object-fit: cover
-
-      &__content
-        width: 407px
-        height: 384px
-        margin: 36px 0 204px 28px
-        &_frame
-          width: 407px
-          height: 384px
-
-@media ( max-width: 768px )
-  .hero
-    margin-bottom: 80px
-    &-container
-      // width: 728px
-      // height: 624px
-
-    &-wrapper
-
-      &__frame
-        width: 100%
-        height: 624px
-        &_photo
-          width: 100%
-          height: 624px
-          object-fit: cover
-
-      &__content
-        width: 407px
-        height: 384px
-        margin: 36px 0 204px 28px
-        &_frame
-          width: 407px
-          height: 384px
-  //         &_label
-  //           &_text
-  //         &_title
-  //           font-size: 48px
-  //           line-height: 60px
-  //         &_text
-  //           font-size: 18px
-  //           line-height: 32px
-  //       &_button
-  //         &_text
-  //   &-box
-  //     &__item
-  //       &_link
-  //         &_text
-  //       &_icon
+    &__container
+      max-width: 96%
